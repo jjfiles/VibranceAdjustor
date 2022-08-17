@@ -9,6 +9,10 @@ internal class Program
 {
     private static void Main()
     {
+        // TODO: readme
+        // TODO: userSettings.json example
+        // TODO: test
+        // TODO: release
         NVIDIA.Initialize();
         Settings settings = LoadSettings();
         var displays = Display.GetDisplays();
