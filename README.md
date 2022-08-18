@@ -57,7 +57,7 @@ Example
   },
   "Secondary": {
     "Name": "obs64",
-    "Folder": "B:\\obs-studio\\bin\\64bit",
+    "Folder": "B:/obs-studio/bin//64bit",
     "Enable": true
   },
   "Monitor": {

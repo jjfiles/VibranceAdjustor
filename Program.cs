@@ -9,7 +9,6 @@ internal class Program
 {
     private static void Main()
     {
-        // TODO: readme
         // TODO: test
         // TODO: release
         NVIDIA.Initialize();
