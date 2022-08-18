@@ -44,3 +44,24 @@ Template
   }
 }
 ```
+
+Example
+```json
+{
+  "Application": {
+    "Name": "VALORANT"
+  },
+  "Vibrance": {
+    "Max": 100,
+    "Normal": 50
+  },
+  "Secondary": {
+    "Name": "obs64",
+    "Folder": "B:\\obs-studio\\bin\\64bit",
+    "Enable": true
+  },
+  "Monitor": {
+    "Number": 0
+  }
+}
+```
