@@ -10,23 +10,22 @@ internal class Program
     private static void Main()
     {
         // TODO: readme
-        // TODO: userSettings.json example
         // TODO: test
         // TODO: release
         NVIDIA.Initialize();
         Settings settings = LoadSettings();
         var displays = Display.GetDisplays();
-        var mainDisplay = displays[0];
+        var mainDisplay = displays[settings.Monitor.Number];
         if (Process.GetProcessesByName(settings.Application.Name).Length > 0)
         {
             Console.WriteLine($"{settings.Application.Name} detected");
             mainDisplay.DigitalVibranceControl.CurrentLevel = 100;
             Console.WriteLine($"Vibrance set to {settings.Vibrance.Max}");
             
-            if (Process.GetProcessesByName("obs64").Length == 0 && settings.OBS.Enable)
+            if (Process.GetProcessesByName(settings.Secondary.Name).Length == 0 && settings.Secondary.Enable)
             {
-                Console.WriteLine("Starting OBS");
-                ProcessStartInfo si = new ProcessStartInfo(Path.Combine(settings.OBS.Folder, settings.OBS.Name)) {WorkingDirectory = $"{settings.OBS.Folder}"};
+                Console.WriteLine($"Starting {settings.Secondary.Name}");
+                ProcessStartInfo si = new ProcessStartInfo(Path.Combine(settings.Secondary.Folder, settings.Secondary.Name)) {WorkingDirectory = $"{settings.Secondary.Folder}"};
                 Process.Start(si);
             }
         }

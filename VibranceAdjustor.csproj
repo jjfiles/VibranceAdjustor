@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="appsettings.json" />
     <EmbeddedResource Include="userSettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
