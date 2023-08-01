@@ -9,7 +9,6 @@ internal class Program
 {
     private static void Main()
     {
-        // TODO: test
         // TODO: release
         NVIDIA.Initialize();
         Settings settings = LoadSettings();

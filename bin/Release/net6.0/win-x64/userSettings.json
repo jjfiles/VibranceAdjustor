@@ -1,0 +1,17 @@
+﻿{
+  "Application": {
+    "Name": ""
+  },
+  "Vibrance": {
+    "Max": 100,
+    "Normal": 50
+  },
+  "Secondary": {
+    "Name": "",
+    "Folder": "",
+    "Enable": true
+  },
+  "Monitor": {
+    "Number": 0
+  }
+}
