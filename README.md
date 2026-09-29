@@ -9,6 +9,20 @@ Optionally it can launch another user defined application during this process.
 
 To change these options edit/create `userSettings.json`
 
+## Download
+
+Grab the latest build from [Releases](https://github.com/jjfiles/VibranceAdjustor/releases). It's a single self-contained `VibranceAdjustor.exe` (no .NET install needed) plus a default `userSettings.json`. Requires Windows and an NVIDIA GPU.
+
+## Build from source
+
+Requires the .NET SDK (6.0 or newer).
+
+```sh
+dotnet build -c Release
+# or a single self-contained exe:
+dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o out
+```
+
 ## userSettings.json
 
 Template
